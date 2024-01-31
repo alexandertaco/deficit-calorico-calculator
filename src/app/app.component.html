@@ -1,0 +1,43 @@
+
+<h1 class="titulo">Calculadora de déficit calórico</h1>
+
+<form action="/calcular" method="post">
+
+  <div class="form-group">
+    <label for="peso">Peso (kg)</label>
+    <input type="number" id="peso" name="peso" class="form-control" required>
+  </div>
+
+  <div class="form-group">
+    <label for="altura">Altura (cm)</label>
+    <input type="number" id="altura" name="altura" class="form-control" required>
+  </div>
+
+  <div class="form-group">
+    <label for="edad">Edad (años)</label>
+    <input type="number" id="edad" name="edad" class="form-control" required>
+  </div>
+
+  <div class="form-group">
+    <label for="genero">Género</label>
+    <select id="genero" name="genero" class="form-control" required>
+      <option value="masculino">Masculino</option>
+      <option value="femenino">Femenino</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="nivel-actividad">Nivel de actividad</label>
+    <select id="nivel-actividad" name="nivel-actividad" class="form-control" required>
+      <option value="sedentario">Sedentario</option>
+      <option value="poco activo">Poco activo</option>
+      <option value="moderadamente activo">Moderadamente activo</option>
+      <option value="muy activo">Muy activo</option>
+    </select>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Calcular</button>
+
+</form>
+
+<router-outlet />
